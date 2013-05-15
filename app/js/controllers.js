@@ -3,9 +3,18 @@
 /* Controllers */
 
 angular.module('myApp.controllers', []).
-  controller('MyCtrl1', [function() {
+    controller('welcomeCtrl', ['$scope','$location', function($scope,$location) {
+        $scope.password = {text: null};
+        $scope.$watch("password.text", function(newVal) {
+            if (newVal && newVal.length > 2) {
+                $location.path('/warning');
+            }
+        });
+        $scope.validate = function(){
 
-  }])
-  .controller('MyCtrl2', [function() {
+        }
 
-  }]);
+    }])
+    .controller('warningCtrl', [function() {
+
+    }]);
