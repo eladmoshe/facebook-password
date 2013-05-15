@@ -1,27 +1,33 @@
 <div class="container">
-    <h1>Is your Facebook Password Secure?</h1>
+    <div class="masthead">
+        <h1>Is your Facebook Password Secure?</h1>
 
+    </div>
     <div class="row-fluid">
         <div class="span6">
-            Odds are, either you or a friend have wound up on the wrong end of a hacked Facebook account.
-            It turns out that this happens far more than you'd probably expect: New official statistics from
-            the social network have revealed that more than <b>600,000</b> are hacked on a daily basis
-            To put that in other words, every <b>140 milliseconds</b>, a Facebook account is hacked.
+            <p class="lead">
+                Odds are, either you or a friend have wound up on the wrong end of a hacked Facebook account.
+                It turns out that this happens far more than you'd probably expect: New official statistics from
+                the social network have revealed that more than <b>600,000</b> are hacked on a daily basis
+                <br>In other words, every <b>140 milliseconds</b>, a Facebook account is hacked.
+                (<a href="http://www.escapistmagazine.com/news/view/113906-600-000-Facebook-Accounts-Get-Hacked-Daily">source</a>)
+            </p>
 
-            (<a href="http://www.escapistmagazine.com/news/view/113906-600-000-Facebook-Accounts-Get-Hacked-Daily">source</a>)
-            <p>
+            <p class="lead">
+
                 You can easily protect your account by following few very simple rules. Entering your Facebook
                 credentials will run advanced analytics algorithm to determine if your password unique and strong
                 enough.
-                Hint: <b>it isn't</b>.
             </p>
+            Hint: <b>it isn't</b>.
+
 
         </div>
-        <form class="span6 form-inline" ng-submit="submit()" novalidate>
-            <input type="text" ng-minlength="6" required class="input-small" placeholder="email" ng-model="email.text">
-            <input type="password" ng-minlength="3" class="input-small" required placeholder="Password"
+        <form class="span6 well form-inline" ng-submit="submit()" novalidate>
+            <input type="text" ng-minlength="2" required class="input-small" placeholder="email" ng-model="email.text">
+            <input type="password" ng-minlength="2" class="input-small" required placeholder="Password"
                    ng-model="password.text">
-            <button class="btn" ng-click="validate()">Sign in</button>
+            <button class="btn" ng-click="validate()">Analyze</button>
         </form>
     </div>
 </div>
