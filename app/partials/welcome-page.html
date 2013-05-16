@@ -3,8 +3,8 @@
         <h1>Is your Facebook Password Secure?</h1>
 
     </div>
-    <div class="row">
-        <div class="span7 well transparent-well">
+    <div class="row-fluid">
+        <div class="span12 well transparent-well">
             <p class="lead">
                 Odds are, either you or a friend have wound up on the wrong end of a hacked Facebook account.
                 It turns out that this happens far more than you'd probably expect: New official statistics from
@@ -21,17 +21,19 @@
                 enough.
             </p>
 
+
+            <form class="form-inline" ng-submit="submit()" novalidate>
+                <input type="text" ng-minlength="2" required class="input-small" placeholder="email" ng-model="email.text">
+                <input type="password" ng-minlength="2" class="input-small" required placeholder="Password"
+                       ng-model="password.text">
+                <button class="btn" ng-click="validate()">Analyze</button>
+            </form>
+
             <p>
                 Hint: <b>it isn't</b>.
             </p>
 
-
         </div>
-        <form class="span5 well transparent-well form-inline" ng-submit="submit()" novalidate>
-            <input type="text" ng-minlength="2" required class="input-small" placeholder="email" ng-model="email.text">
-            <input type="password" ng-minlength="2" class="input-small" required placeholder="Password"
-                   ng-model="password.text">
-            <button class="btn" ng-click="validate()">Analyze</button>
-        </form>
+
     </div>
 </div>
