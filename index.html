@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="utf-8">
+    <title>My AngularJS App</title>
+    <link rel="stylesheet" href="app/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="app/css/docs.css"/>
+    <link rel="stylesheet" href="app/css/app.css"/>
+
+</head>
+<body class="body-background">
+<div id="fb-root"></div>
+<!--facebook buttons SDK-->
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div ng-view></div>
+
+<!-- In production use:
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.min.js"></script>
+-->
+<script src="app/lib/angular/angular.js"></script>
+<script src="app/js/app.js"></script>
+<script src="app/js/controllers.js"></script>
+<script src="app/js/filters.js"></script>
+</body>
+</html>
