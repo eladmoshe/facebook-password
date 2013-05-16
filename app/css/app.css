@@ -1,5 +1,6 @@
 /* app css stylesheet */
 @import "bootstrap.min.css";
+
 /* Regular */
 body.body-background {
     background-color: transparent;
@@ -20,11 +21,19 @@ p {
 }
 
 .transparent-well {
-    opacity:0.85;
+    opacity: 0.85;
 }
 
 .masthead {
     color: white;
     text-align: center;
     text-shadow: -1px 1px black, 0 2px black, 1px 1px black, 0 -1px black;
+}
+
+.masthead.yell {
+    color: red;
+}
+
+strong {
+    color: pink;
 }
