@@ -2,6 +2,29 @@
 @import "bootstrap.min.css";
 /* Regular */
 body.body-background {
-    background: #333333;
-    padding-top: 30px;
+    background-color: transparent;
+    /*background: #333333;*/
+    /*padding-top: 30px;*/
+}
+
+html {
+    background: url(../img/city.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+p {
+    color: black;
+}
+
+.transparent-well {
+    opacity:0.85;
+}
+
+.masthead {
+    color: white;
+    text-align: center;
+    text-shadow: -1px 1px black, 0 2px black, 1px 1px black, 0 -1px black;
 }
