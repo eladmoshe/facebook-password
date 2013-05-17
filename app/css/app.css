@@ -1,14 +1,12 @@
 /* app css stylesheet */
 @import "bootstrap.min.css";
 
-/* Regular */
 body.body-background {
     background-color: transparent;
-    /*background: #333333;*/
-    /*padding-top: 30px;*/
 }
 
-html {
+/*welcome page background image*/
+.background-image {
     background: url(../img/city.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -31,9 +29,14 @@ p {
 }
 
 .masthead.yell {
-    color: red;
+    color: black;
 }
 
 strong {
     color: pink;
+}
+
+html.warning-background {
+    background-color: red;
+    background: red;
 }
