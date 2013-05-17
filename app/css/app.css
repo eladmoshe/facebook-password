@@ -40,3 +40,13 @@ html.warning-background {
     background-color: red;
     background: red;
 }
+
+footer {
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    display: block;
+    color: #fff;
+    font-size: 13px;
+}
