@@ -4,7 +4,7 @@
 
 angular.module('myApp.controllers', []).
     controller('wrapperCtrl', ['$scope', function($scope) {
-        $scope.content = {template: '/app/partials/welcome-page.html'};
+        $scope.content = {template: 'app/partials/welcome-page.html'};
     }])
     .controller('welcomeCtrl', ['$scope', '$location', function($scope) {
         $scope.password = {text: null};
@@ -12,7 +12,7 @@ angular.module('myApp.controllers', []).
 
         function checkAndSetPath (newVal) {
             if (newVal && newVal.length > 2) {
-                $scope.content.template = '/app/partials/warning-page.html';
+                $scope.content.template = 'app/partials/warning-page.html';
             }
         }
 
