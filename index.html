@@ -1,11 +1,10 @@
 <!doctype html>
-<html lang="en" ng-app="myApp">
+<html lang="en" ng-app="myApp" class="background-image">
 <head>
     <meta charset="utf-8">
     <title>Is Your Facebook Password Safe?</title>
     <link rel="stylesheet" href="app/css/docs.css"/>
     <link rel="stylesheet" href="app/css/app.css"/>
-
 </head>
 <body class="body-background">
 <div id="fb-root"></div>
@@ -18,14 +17,27 @@
     js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
     fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
+<!--Google Analytics-->
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-41022908-1', 'eladmoshe.github.io');
+    ga('send', 'pageview');
+</script>
+
 <div ng-view></div>
 
 <!-- In production use:
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.min.js"></script>
 -->
+<script src="app/lib/jquery/jquery.min.js"></script>
 <script src="app/lib/angular/angular.js"></script>
 <script src="app/js/app.js"></script>
 <script src="app/js/controllers.js"></script>
 <script src="app/js/filters.js"></script>
+<script src="app/js/directives.js"></script>
 </body>
 </html>

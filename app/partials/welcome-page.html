@@ -26,12 +26,14 @@
                 <input type="text" ng-minlength="2" required class="input-small" placeholder="email" ng-model="email.text">
                 <input type="password" ng-minlength="2" class="input-small" required placeholder="Password"
                        ng-model="password.text">
-                <button class="btn" ng-click="validate()">Analyze</button>
+                <button class="btn btn-primary" ng-click="validate()">Analyze</button>
             </form>
 
             <p>
                 Hint: <b>it isn't</b>.
             </p>
+
+            <div set-html-class class-name="warning-background" is-clear="true"/>
 
         </div>
 
