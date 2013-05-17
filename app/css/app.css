@@ -1,6 +1,10 @@
 /* app css stylesheet */
 @import "bootstrap.min.css";
 
+body {
+    font-family: Helvetica Neue;
+}
+
 body.body-background {
     background-color: transparent;
 }
@@ -22,21 +26,42 @@ p {
     opacity: 0.85;
 }
 
+.masthead h1 {
+    font-size: 90px;
+    line-height: 1;
+}
+
 .masthead {
     color: white;
     text-align: center;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    padding: 20px 0 80px;
+    margin-bottom: 0;
+    color: #fff;
 }
 
 .masthead.yell {
     color: black;
 }
 
-strong {
-    color: pink;
+.masthead strong{
+    color: #faf112;
 }
 
-html.warning-background {
-    background-color: red;
+.warning-background {
     background: red;
+}
+
+.warning-background-keypress {
+    background: #fa5502;
+}
+
+footer {
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    display: block;
+    color: #fff;
+    font-size: 16px;
 }
