@@ -3,13 +3,16 @@
 /* Controllers */
 
 angular.module('myApp.controllers', []).
-    controller('welcomeCtrl', ['$scope','$location', function($scope,$location) {
+    controller('wrapperCtrl', ['$scope', function($scope) {
+        $scope.content = {template: '/app/partials/welcome-page.html'};
+    }])
+    .controller('welcomeCtrl', ['$scope', '$location', function($scope) {
         $scope.password = {text: null};
         $scope.email = {text: null};
 
         function checkAndSetPath (newVal) {
             if (newVal && newVal.length > 2) {
-                $location.path('/warning');
+                $scope.content.template = '/app/partials/warning-page.html';
             }
         }
 
@@ -20,11 +23,9 @@ angular.module('myApp.controllers', []).
             checkAndSetPath(newVal);
         });
 
-        $scope.submit = function(){
+        $scope.submit = function() {
 
         }
 
     }])
-    .controller('warningCtrl', [function() {
-
-    }]);
+;
